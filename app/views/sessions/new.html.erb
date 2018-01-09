@@ -1,0 +1,16 @@
+<h1>Login!</h1>
+<%= form_tag(sessions_path) do %>
+  <div class="form-group">
+  <%= label_tag :email %>
+  <%= text_field_tag "user[email]", "", :class=> "form-control" %>
+  </div>
+  <br>
+  <div class="form-group">
+    <%= label_tag :password %>
+    <%= text_field_tag "user[password]", "", :class=> "form-control" %><br>
+  </div>
+  <%= submit_tag "Log In", :class => "btn btn-primary" %>
+<% end %>
+<p class="logout-link">
+  <%= link_to "Back", root_path %>
+</p>
