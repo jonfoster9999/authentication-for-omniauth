@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get '/users/new' => 'users#new'
   post '/users' => 'users#create'
-
+  get "/auth/facebook/callback" => 'sessions#facebook'
 
 
   get '/login' => 'sessions#new'
@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   get '/logout' => 'sessions#logout'
 
   get '/home' => 'application#home', :as => "home"
+
+
 end

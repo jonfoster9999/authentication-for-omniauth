@@ -12,10 +12,10 @@
   <br>
   <div class="form-group">
     <%= f.label :password %>
-    <%= f.text_field :password, :class=>"form-control" %><br>
+    <%= f.password_field :password, :class=>"form-control" %><br>
   </div>
   <%= f.submit "Sign Up", :class=>"btn btn-primary" %>
 <% end %>
-<p class="logout-link">
+<p class="center-link">
   <%= link_to "Back", root_path %>
 </p>

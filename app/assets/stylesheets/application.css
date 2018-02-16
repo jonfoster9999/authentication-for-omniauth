@@ -26,7 +26,7 @@ body, html {
 }
 
 form {
-  width: 60%;
+  width: 50%;
   display: block;
   margin: auto;
   border: 1px solid black;
@@ -34,6 +34,14 @@ form {
   border-radius: 4px;
 }
 
-.logout-link {
+.center-link {
   text-align: center;
+}
+
+.error {
+  color: red;
+}
+
+.username {
+  color: green;
 }

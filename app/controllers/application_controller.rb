@@ -24,4 +24,6 @@ class ApplicationController < ActionController::Base
     redirect_to home_path if logged_in?
   end
 
+  helper_method :current_user
+
 end

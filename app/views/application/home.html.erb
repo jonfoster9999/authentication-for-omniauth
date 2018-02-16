@@ -1,2 +1,7 @@
 <h1>Home</h1>
-<p class="logout-link"><a href="/logout">Logout</a></p>
+<p class="center-link"><a href="/logout">Logout</a></p>
+<% if current_user.image != "" %>
+  <img src="<%= current_user.image %>" />
+<% end %>
+<hr>
+<p class="center-link">Signed in as <span class="username"><%= current_user.email %></span></p>
